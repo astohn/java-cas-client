@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.jasig.cas.client.authentication.AuthenticationFilterTests" tests="14" skipped="0" failures="0" errors="0" timestamp="2020-01-07T17:12:54" hostname="Axman000.local" time="0.028">
+  <properties/>
+  <testcase name="customRedirectStrategy" classname="org.jasig.cas.client.authentication.AuthenticationFilterTests" time="0.005"/>
+  <testcase name="testRenewInitParamThrows" classname="org.jasig.cas.client.authentication.AuthenticationFilterTests" time="0.001"/>
+  <testcase name="testRenew" classname="org.jasig.cas.client.authentication.AuthenticationFilterTests" time="0.001"/>
+  <testcase name="testIgnorePatterns" classname="org.jasig.cas.client.authentication.AuthenticationFilterTests" time="0.002"/>
+  <testcase name="testGateway" classname="org.jasig.cas.client.authentication.AuthenticationFilterTests" time="0.001"/>
+  <testcase name="testIgnorePatternsWithExactClassname" classname="org.jasig.cas.client.authentication.AuthenticationFilterTests" time="0.003"/>
+  <testcase name="testRedirectWithQueryString" classname="org.jasig.cas.client.authentication.AuthenticationFilterTests" time="0.002"/>
+  <testcase name="testIgnorePatternsWithInvalidClassname" classname="org.jasig.cas.client.authentication.AuthenticationFilterTests" time="0.004"/>
+  <testcase name="testIgnorePatternsWithExactMatching" classname="org.jasig.cas.client.authentication.AuthenticationFilterTests" time="0.002"/>
+  <testcase name="testIgnorePatternsWithContainsMatching" classname="org.jasig.cas.client.authentication.AuthenticationFilterTests" time="0.002"/>
+  <testcase name="testAllowsRenewContextParam" classname="org.jasig.cas.client.authentication.AuthenticationFilterTests" time="0.001"/>
+  <testcase name="testRedirectWithCasServerPrefixConfig" classname="org.jasig.cas.client.authentication.AuthenticationFilterTests" time="0.002"/>
+  <testcase name="testAssertion" classname="org.jasig.cas.client.authentication.AuthenticationFilterTests" time="0.001"/>
+  <testcase name="testRedirectWithLoginUrlConfig" classname="org.jasig.cas.client.authentication.AuthenticationFilterTests" time="0.0"/>
+  <system-out><![CDATA[https://localhost:8443/cas/login?service=https%3A%2F%2Flocalhost%3A8443%2Fservice
+]]></system-out>
+  <system-err><![CDATA[[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/service]
+[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/cas/login]
+[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from ServletContext.getInitParameter with value [https://localhost:8443/service]
+[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from ServletContext.getInitParameter with value [https://localhost:8443/cas/login]
+[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [authenticationRedirectStrategyClass] loaded from ServletContext.getInitParameter with value [org.jasig.cas.client.authentication.FacesCompatibleAuthenticationRedirectStrategy]
+[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/service]
+[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/cas/login]
+[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/service]
+[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/cas/login]
+[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/service]
+[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/cas/login]
+[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/service]
+[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/cas/login]
+[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from ServletContext.getInitParameter with value [https://localhost:8443/service]
+[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from ServletContext.getInitParameter with value [https://localhost:8443/cas/login]
+[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [ignorePattern] loaded from ServletContext.getInitParameter with value [=valueTo(\w+)]
+[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/service]
+[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/cas/login]
+[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/service]
+[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/cas/login]
+[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from ServletContext.getInitParameter with value [https://localhost:8443/service]
+[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from ServletContext.getInitParameter with value [https://localhost:8443/cas/login]
+[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [ignorePattern] loaded from ServletContext.getInitParameter with value [=valueToIgnore]
+[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [ignoreUrlPatternType] loaded from ServletContext.getInitParameter with value [org.jasig.cas.client.authentication.ContainsPatternUrlPatternMatcherStrategy]
+[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/service]
+[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/cas/login]
+[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [serverName] loaded from FilterConfig.getInitParameter with value [localhost:8443]
+[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/cas/login]
+[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/service]
+[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/cas/login]
+[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from ServletContext.getInitParameter with value [https://localhost:8443/service]
+[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from ServletContext.getInitParameter with value [https://localhost:8443/cas/login]
+[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [ignorePattern] loaded from ServletContext.getInitParameter with value [=valueToIgnore]
+[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [ignoreUrlPatternType] loaded from ServletContext.getInitParameter with value [unknown.class.name]
+[Test worker] ERROR org.jasig.cas.client.authentication.AuthenticationFilter - Could not instantiate class [unknown.class.name]
+java.lang.IllegalArgumentException: unknown.class.name class not found.
+	at org.jasig.cas.client.util.ReflectUtils.loadClass(ReflectUtils.java:53)
+	at org.jasig.cas.client.util.ReflectUtils.newInstance(ReflectUtils.java:65)
+	at org.jasig.cas.client.authentication.AuthenticationFilter.initInternal(AuthenticationFilter.java:129)
+	at org.jasig.cas.client.util.AbstractCasFilter.init(AbstractCasFilter.java:74)
+	at org.jasig.cas.client.authentication.AuthenticationFilterTests.testIgnorePatternsWithInvalidClassname(AuthenticationFilterTests.java:388)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:175)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:157)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.lang.Thread.run(Thread.java:748)
+[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/service]
+[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/cas/login]
+[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from ServletContext.getInitParameter with value [https://localhost:8443/service]
+[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from ServletContext.getInitParameter with value [https://localhost:8443/cas/login]
+[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [ignorePattern] loaded from ServletContext.getInitParameter with value [https://localhost:8443/service?param=valueToIgnore]
+[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [ignoreUrlPatternType] loaded from ServletContext.getInitParameter with value [EXACT]
+[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/service]
+[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/cas/login]
+[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from ServletContext.getInitParameter with value [https://localhost:8443/service]
+[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from ServletContext.getInitParameter with value [https://localhost:8443/cas/login]
+[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [ignorePattern] loaded from ServletContext.getInitParameter with value [=valueToIgnore]
+[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [ignoreUrlPatternType] loaded from ServletContext.getInitParameter with value [CONTAINS]
+[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/service]
+[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/cas/login]
+[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from ServletContext.getInitParameter with value [https://localhost:8443/service]
+[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from ServletContext.getInitParameter with value [https://localhost:8443/cas/login]
+[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [renew] loaded from ServletContext.getInitParameter with value [true]
+[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/service]
+[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/cas/login]
+[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/service]
+[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/cas]
+[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/service]
+[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/cas/login]
+[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/service]
+[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/cas/login]
+]]></system-err>
+</testsuite>

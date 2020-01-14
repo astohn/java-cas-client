@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.jasig.cas.client.validation.Cas20ServiceTicketValidatorTests" tests="7" skipped="0" failures="0" errors="0" timestamp="2020-01-07T17:12:54" hostname="Axman000.local" time="0.532">
+  <properties/>
+  <testcase name="testYesResponseButNoPgtiou" classname="org.jasig.cas.client.validation.Cas20ServiceTicketValidatorTests" time="0.413"/>
+  <testcase name="testInvalidResponse" classname="org.jasig.cas.client.validation.Cas20ServiceTicketValidatorTests" time="0.004"/>
+  <testcase name="testYesResponseWithPgtiouAndEncryptedPgt" classname="org.jasig.cas.client.validation.Cas20ServiceTicketValidatorTests" time="0.005"/>
+  <testcase name="testYesResponseWithEncryptedPgt" classname="org.jasig.cas.client.validation.Cas20ServiceTicketValidatorTests" time="0.098"/>
+  <testcase name="testYesResponseWithPgtiou" classname="org.jasig.cas.client.validation.Cas20ServiceTicketValidatorTests" time="0.004"/>
+  <testcase name="testNoResponse" classname="org.jasig.cas.client.validation.Cas20ServiceTicketValidatorTests" time="0.003"/>
+  <testcase name="testGetAttributes" classname="org.jasig.cas.client.validation.Cas20ServiceTicketValidatorTests" time="0.005"/>
+  <system-out><![CDATA[Accepting connections on port 8088
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

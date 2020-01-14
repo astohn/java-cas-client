@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.jasig.cas.client.validation.Saml11TicketValidationFilterTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-01-07T17:13:02" hostname="Axman000.local" time="0.031">
+  <properties/>
+  <testcase name="testRenewInitParamThrows" classname="org.jasig.cas.client.validation.Saml11TicketValidationFilterTests" time="0.029"/>
+  <testcase name="testAllowsRenewContextParam" classname="org.jasig.cas.client.validation.Saml11TicketValidationFilterTests" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://cas.example.com]
+[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from ServletContext.getInitParameter with value [http://www.jasig.org]
+[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerUrlPrefix] loaded from ServletContext.getInitParameter with value [https://cas.example.com]
+[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [renew] loaded from ServletContext.getInitParameter with value [true]
+[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerUrlPrefix] loaded from ServletContext.getInitParameter with value [https://cas.example.com]
+[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [renew] loaded from ServletContext.getInitParameter with value [true]
+]]></system-err>
+</testsuite>

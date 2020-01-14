@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.jasig.cas.client.jaas.CasLoginModuleTests" tests="5" skipped="0" failures="0" errors="0" timestamp="2020-01-07T17:12:53" hostname="Axman000.local" time="1.194">
+  <properties/>
+  <testcase name="testAssertionCaching" classname="org.jasig.cas.client.jaas.CasLoginModuleTests" time="0.056"/>
+  <testcase name="testLoginSuccess" classname="org.jasig.cas.client.jaas.CasLoginModuleTests" time="0.009"/>
+  <testcase name="testAssertionCachingExpiration" classname="org.jasig.cas.client.jaas.CasLoginModuleTests" time="1.116"/>
+  <testcase name="testLoginFailure" classname="org.jasig.cas.client.jaas.CasLoginModuleTests" time="0.005"/>
+  <testcase name="testLogout" classname="org.jasig.cas.client.jaas.CasLoginModuleTests" time="0.007"/>
+  <system-out><![CDATA[Accepting connections on port 8091
+]]></system-out>
+  <system-err><![CDATA[[Test worker] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property principalGroupName on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[Test worker] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property cacheAssertions on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[Test worker] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property cacheTimeout on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[Test worker] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property service on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[Test worker] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property ticketValidatorClass on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[Test worker] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property defaultRoles on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[Test worker] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property roleGroupName on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[Test worker] INFO org.jasig.cas.client.jaas.CasLoginModule - Login succeeded.
+[Test worker] INFO org.jasig.cas.client.jaas.CasLoginModule - Logout succeeded.
+[Test worker] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property principalGroupName on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[Test worker] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property cacheAssertions on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[Test worker] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property cacheTimeout on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[Test worker] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property service on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[Test worker] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property ticketValidatorClass on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[Test worker] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property defaultRoles on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[Test worker] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property roleGroupName on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[Test worker] INFO org.jasig.cas.client.jaas.CasLoginModule - Login failed due to CAS ticket validation failure
+org.jasig.cas.client.validation.TicketValidationException: Ticket ST-300000-aA5Yuvrxzpv8Tau1cYQ7-srv1 not recognized
+	at org.jasig.cas.client.validation.Cas20ServiceTicketValidator.parseResponseFromServer(Cas20ServiceTicketValidator.java:96)
+	at org.jasig.cas.client.validation.AbstractUrlBasedTicketValidator.validate(AbstractUrlBasedTicketValidator.java:199)
+	at org.jasig.cas.client.jaas.CasLoginModule.login(CasLoginModule.java:327)
+	at org.jasig.cas.client.jaas.CasLoginModuleTests.testAssertionCaching(CasLoginModuleTests.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:175)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:157)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.lang.Thread.run(Thread.java:748)
+[Test worker] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property principalGroupName on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[Test worker] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property service on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[Test worker] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property ticketValidatorClass on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[Test worker] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property defaultRoles on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[Test worker] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property roleGroupName on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[Test worker] INFO org.jasig.cas.client.jaas.CasLoginModule - Login succeeded.
+[Test worker] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property principalGroupName on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[Test worker] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property cacheAssertions on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[Test worker] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property cacheTimeout on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[Test worker] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property service on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[Test worker] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property ticketValidatorClass on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[Test worker] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property defaultRoles on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[Test worker] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property cacheTimeoutUnit on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[Test worker] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property roleGroupName on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[Test worker] INFO org.jasig.cas.client.jaas.CasLoginModule - Login succeeded.
+[Test worker] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property principalGroupName on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[Test worker] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property cacheAssertions on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[Test worker] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property cacheTimeout on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[Test worker] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property service on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[Test worker] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property ticketValidatorClass on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[Test worker] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property defaultRoles on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[Test worker] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property cacheTimeoutUnit on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[Test worker] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property roleGroupName on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[Test worker] INFO org.jasig.cas.client.jaas.CasLoginModule - Login failed due to CAS ticket validation failure
+org.jasig.cas.client.validation.TicketValidationException: Ticket ST-12345-ABCDEFGHIJKLMNOPQRSTUVWXYZ-hosta not recognized
+	at org.jasig.cas.client.validation.Cas20ServiceTicketValidator.parseResponseFromServer(Cas20ServiceTicketValidator.java:96)
+	at org.jasig.cas.client.validation.AbstractUrlBasedTicketValidator.validate(AbstractUrlBasedTicketValidator.java:199)
+	at org.jasig.cas.client.jaas.CasLoginModule.login(CasLoginModule.java:327)
+	at org.jasig.cas.client.jaas.CasLoginModuleTests.testAssertionCachingExpiration(CasLoginModuleTests.java:230)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:175)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:157)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.lang.Thread.run(Thread.java:748)
+[Test worker] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property principalGroupName on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[Test worker] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property service on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[Test worker] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property ticketValidatorClass on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[Test worker] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property defaultRoles on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[Test worker] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property roleGroupName on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[Test worker] INFO org.jasig.cas.client.jaas.CasLoginModule - Login failed due to CAS ticket validation failure
+org.jasig.cas.client.validation.TicketValidationException: Ticket ST-200000-aA5Yuvrxzpv8Tau1cYQ7-srv1 not recognized
+	at org.jasig.cas.client.validation.Cas20ServiceTicketValidator.parseResponseFromServer(Cas20ServiceTicketValidator.java:96)
+	at org.jasig.cas.client.validation.AbstractUrlBasedTicketValidator.validate(AbstractUrlBasedTicketValidator.java:199)
+	at org.jasig.cas.client.jaas.CasLoginModule.login(CasLoginModule.java:327)
+	at org.jasig.cas.client.jaas.CasLoginModuleTests.testLoginFailure(CasLoginModuleTests.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:175)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:157)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.lang.Thread.run(Thread.java:748)
+[Test worker] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property principalGroupName on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[Test worker] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property service on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[Test worker] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property ticketValidatorClass on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[Test worker] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property defaultRoles on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[Test worker] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property roleGroupName on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[Test worker] INFO org.jasig.cas.client.jaas.CasLoginModule - Login succeeded.
+[Test worker] INFO org.jasig.cas.client.jaas.CasLoginModule - Logout succeeded.
+]]></system-err>
+</testsuite>

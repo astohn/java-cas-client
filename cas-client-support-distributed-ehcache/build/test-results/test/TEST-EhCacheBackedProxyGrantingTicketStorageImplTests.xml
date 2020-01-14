@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="EhCacheBackedProxyGrantingTicketStorageImplTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-01-07T17:13:01" hostname="Axman000.local" time="0.16">
+  <properties/>
+  <testcase name="testEncryptionMechanisms" classname="EhCacheBackedProxyGrantingTicketStorageImplTests" time="0.16"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[[Test worker] WARN net.sf.ehcache.config.ConfigurationFactory - No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/Users/axman/.m2/repository/net/sf/ehcache/ehcache-core/2.6.11/ehcache-core-2.6.11.jar!/ehcache-failsafe.xml
+]]></system-err>
+</testsuite>

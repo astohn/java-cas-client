@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.jasig.cas.client.util.HttpServletRequestWrapperFilterTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-01-07T17:12:53" hostname="Axman000.local" time="0.009">
+  <properties/>
+  <testcase name="testWrappedRequest" classname="org.jasig.cas.client.util.HttpServletRequestWrapperFilterTests" time="0.007"/>
+  <testcase name="testIsUserInRoleCaseInsensitive" classname="org.jasig.cas.client.util.HttpServletRequestWrapperFilterTests" time="0.0"/>
+  <testcase name="testIsUserInRole" classname="org.jasig.cas.client.util.HttpServletRequestWrapperFilterTests" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [roleAttribute] loaded from FilterConfig.getInitParameter with value [groupMembership]
+[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [ignoreCase] loaded from FilterConfig.getInitParameter with value [true]
+[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [roleAttribute] loaded from FilterConfig.getInitParameter with value [memberOf]
+]]></system-err>
+</testsuite>

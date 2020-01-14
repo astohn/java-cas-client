@@ -66,7 +66,7 @@ public final class EhcacheBackedProxyGrantingTicketStorageImpl extends AbstractE
             return null;
         }
 
-        return (String) element.getValue();
+        return (String) element.getObjectValue();
     }
 
     @Override

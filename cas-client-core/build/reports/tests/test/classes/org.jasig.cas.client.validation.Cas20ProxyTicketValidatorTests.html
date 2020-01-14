@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class org.jasig.cas.client.validation.Cas20ProxyTicketValidatorTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class org.jasig.cas.client.validation.Cas20ProxyTicketValidatorTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/org.jasig.cas.client.validation.html">org.jasig.cas.client.validation</a> &gt; Cas20ProxyTicketValidatorTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">5</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.327s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testConstructionFromSpringBean</td>
+<td class="success">0.306s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testProxyChainWithInvalidProxy</td>
+<td class="success">0.005s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testProxyChainWithValidProxy</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testRegexProxyChainWithInvalidProxy</td>
+<td class="success">0.008s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testRegexProxyChainWithValidProxy</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Accepting connections on port 8089
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>[Test worker] INFO org.jasig.cas.client.proxy.ProxyGrantingTicketStorageImpl - No Proxy Ticket found for [PGTIOU-84678-8a9d...].
+[Test worker] WARN org.jasig.cas.client.validation.ProxyList - Proxy chain did not match at proxy1-&gt;proxy2-&gt;proxy3/ABC/. Skipping to next allowedProxyChain
+[Test worker] WARN org.jasig.cas.client.validation.ProxyList - No proxy chain matched the allowedProxyChains list.
+[Test worker] WARN org.jasig.cas.client.validation.Cas20ProxyTicketValidator - Proxies received from the CAS validation response are [proxy1, proxy2, proxy3/ABC/]. However, none are allowed by allowed proxy chain of the client which is [[org.jasig.cas.client.authentication.ExactUrlPatternMatcherStrategy@461ab10c, org.jasig.cas.client.authentication.ExactUrlPatternMatcherStrategy@201631a6, org.jasig.cas.client.authentication.RegexUrlPatternMatcherStrategy@22e67bf]]
+[Test worker] INFO org.jasig.cas.client.validation.ProxyList - Proxy chain matched: proxy1-&gt;proxy2-&gt;proxy3
+[Test worker] INFO org.jasig.cas.client.proxy.ProxyGrantingTicketStorageImpl - No Proxy Ticket found for [PGTIOU-84678-8a9d...].
+[Test worker] INFO org.jasig.cas.client.validation.ProxyList - Proxy chain matched: proxy1-&gt;proxy2-&gt;proxy3/abc/
+[Test worker] INFO org.jasig.cas.client.proxy.ProxyGrantingTicketStorageImpl - No Proxy Ticket found for [PGTIOU-84678-8a9d...].
+[Test worker] WARN org.jasig.cas.client.validation.ProxyList - Proxy chain did not match at proxy7. Skipping to next allowedProxyChain
+[Test worker] WARN org.jasig.cas.client.validation.ProxyList - No proxy chain matched the allowedProxyChains list.
+[Test worker] WARN org.jasig.cas.client.validation.Cas20ProxyTicketValidator - Proxies received from the CAS validation response are [proxy7, proxy2, proxy3]. However, none are allowed by allowed proxy chain of the client which is [[org.jasig.cas.client.authentication.ExactUrlPatternMatcherStrategy@5d1facce, org.jasig.cas.client.authentication.ExactUrlPatternMatcherStrategy@3d52b63c, org.jasig.cas.client.authentication.ExactUrlPatternMatcherStrategy@3701ad55]]
+[Test worker] INFO org.jasig.cas.client.proxy.ProxyGrantingTicketStorageImpl - No Proxy Ticket found for [PGTIOU-84678-8a9d...].
+[Test worker] INFO org.jasig.cas.client.validation.ProxyList - Proxy chain matched: proxy1-&gt;proxy2-&gt;proxy3
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 5.5.1</a> at Jan 7, 2020 10:12:57 AM</p>
+</div>
+</div>
+</body>
+</html>

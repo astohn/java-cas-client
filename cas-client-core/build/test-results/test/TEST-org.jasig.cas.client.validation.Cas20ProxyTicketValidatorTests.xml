@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.jasig.cas.client.validation.Cas20ProxyTicketValidatorTests" tests="5" skipped="0" failures="0" errors="0" timestamp="2020-01-07T17:12:55" hostname="Axman000.local" time="0.327">
+  <properties/>
+  <testcase name="testRegexProxyChainWithInvalidProxy" classname="org.jasig.cas.client.validation.Cas20ProxyTicketValidatorTests" time="0.008"/>
+  <testcase name="testConstructionFromSpringBean" classname="org.jasig.cas.client.validation.Cas20ProxyTicketValidatorTests" time="0.306"/>
+  <testcase name="testRegexProxyChainWithValidProxy" classname="org.jasig.cas.client.validation.Cas20ProxyTicketValidatorTests" time="0.004"/>
+  <testcase name="testProxyChainWithInvalidProxy" classname="org.jasig.cas.client.validation.Cas20ProxyTicketValidatorTests" time="0.005"/>
+  <testcase name="testProxyChainWithValidProxy" classname="org.jasig.cas.client.validation.Cas20ProxyTicketValidatorTests" time="0.004"/>
+  <system-out><![CDATA[Accepting connections on port 8089
+]]></system-out>
+  <system-err><![CDATA[[Test worker] INFO org.jasig.cas.client.proxy.ProxyGrantingTicketStorageImpl - No Proxy Ticket found for [PGTIOU-84678-8a9d...].
+[Test worker] WARN org.jasig.cas.client.validation.ProxyList - Proxy chain did not match at proxy1->proxy2->proxy3/ABC/. Skipping to next allowedProxyChain
+[Test worker] WARN org.jasig.cas.client.validation.ProxyList - No proxy chain matched the allowedProxyChains list.
+[Test worker] WARN org.jasig.cas.client.validation.Cas20ProxyTicketValidator - Proxies received from the CAS validation response are [proxy1, proxy2, proxy3/ABC/]. However, none are allowed by allowed proxy chain of the client which is [[org.jasig.cas.client.authentication.ExactUrlPatternMatcherStrategy@461ab10c, org.jasig.cas.client.authentication.ExactUrlPatternMatcherStrategy@201631a6, org.jasig.cas.client.authentication.RegexUrlPatternMatcherStrategy@22e67bf]]
+[Test worker] INFO org.jasig.cas.client.validation.ProxyList - Proxy chain matched: proxy1->proxy2->proxy3
+[Test worker] INFO org.jasig.cas.client.proxy.ProxyGrantingTicketStorageImpl - No Proxy Ticket found for [PGTIOU-84678-8a9d...].
+[Test worker] INFO org.jasig.cas.client.validation.ProxyList - Proxy chain matched: proxy1->proxy2->proxy3/abc/
+[Test worker] INFO org.jasig.cas.client.proxy.ProxyGrantingTicketStorageImpl - No Proxy Ticket found for [PGTIOU-84678-8a9d...].
+[Test worker] WARN org.jasig.cas.client.validation.ProxyList - Proxy chain did not match at proxy7. Skipping to next allowedProxyChain
+[Test worker] WARN org.jasig.cas.client.validation.ProxyList - No proxy chain matched the allowedProxyChains list.
+[Test worker] WARN org.jasig.cas.client.validation.Cas20ProxyTicketValidator - Proxies received from the CAS validation response are [proxy7, proxy2, proxy3]. However, none are allowed by allowed proxy chain of the client which is [[org.jasig.cas.client.authentication.ExactUrlPatternMatcherStrategy@5d1facce, org.jasig.cas.client.authentication.ExactUrlPatternMatcherStrategy@3d52b63c, org.jasig.cas.client.authentication.ExactUrlPatternMatcherStrategy@3701ad55]]
+[Test worker] INFO org.jasig.cas.client.proxy.ProxyGrantingTicketStorageImpl - No Proxy Ticket found for [PGTIOU-84678-8a9d...].
+[Test worker] INFO org.jasig.cas.client.validation.ProxyList - Proxy chain matched: proxy1->proxy2->proxy3
+]]></system-err>
+</testsuite>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.jasig.cas.client.validation.Saml11TicketValidatorTests" tests="3" skipped="3" failures="0" errors="0" timestamp="2020-01-07T17:13:02" hostname="Axman000.local" time="0.0">
+  <properties/>
+  <testcase name="testCompatibilityValidationSuccessWithNoAttributes" classname="org.jasig.cas.client.validation.Saml11TicketValidatorTests" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="openSaml2GeneratedResponse" classname="org.jasig.cas.client.validation.Saml11TicketValidatorTests" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testCompatibilityValidationFailedResponse" classname="org.jasig.cas.client.validation.Saml11TicketValidatorTests" time="0.0">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImplTests" tests="12" skipped="0" failures="0" errors="0" timestamp="2020-01-07T17:12:52" hostname="Axman000.local" time="0.023">
+  <properties/>
+  <testcase name="servletConfigValueForLong" classname="org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImplTests" time="0.018"/>
+  <testcase name="servletConfigValueForInt" classname="org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImplTests" time="0.0"/>
+  <testcase name="servletConfigValueForBoolean" classname="org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImplTests" time="0.001"/>
+  <testcase name="noKeyFoundGetDefaultForBoolean" classname="org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImplTests" time="0.0"/>
+  <testcase name="filterConfigValueForLong" classname="org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImplTests" time="0.001"/>
+  <testcase name="noKeyFoundGetDefaultForLong" classname="org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImplTests" time="0.0"/>
+  <testcase name="filterConfigValueForInt" classname="org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImplTests" time="0.0"/>
+  <testcase name="noKeyFoundGetDefaultForString" classname="org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImplTests" time="0.0"/>
+  <testcase name="filterConfigValueForString" classname="org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImplTests" time="0.0"/>
+  <testcase name="servletConfigValueForString" classname="org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImplTests" time="0.0"/>
+  <testcase name="noKeyFoundGetDefaultForInt" classname="org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImplTests" time="0.0"/>
+  <testcase name="filterConfigValueForBoolean" classname="org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImplTests" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [tolerance] loaded from ServletContext.getInitParameter with value [1500]
+[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [millisBetweenCleanUps] loaded from ServletContext.getInitParameter with value [1500]
+[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [acceptAnyProxy] loaded from ServletContext.getInitParameter with value [true]
+[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [tolerance] loaded from FilterConfig.getInitParameter with value [1500]
+[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [millisBetweenCleanUps] loaded from FilterConfig.getInitParameter with value [1500]
+[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [artifactParameterName] loaded from FilterConfig.getInitParameter with value [foobar]
+[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [artifactParameterName] loaded from ServletContext.getInitParameter with value [foobar]
+[Test worker] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [acceptAnyProxy] loaded from FilterConfig.getInitParameter with value [true]
+]]></system-err>
+</testsuite>

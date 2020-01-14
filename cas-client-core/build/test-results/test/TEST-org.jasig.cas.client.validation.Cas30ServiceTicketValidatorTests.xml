@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.jasig.cas.client.validation.Cas30ServiceTicketValidatorTests" tests="6" skipped="0" failures="0" errors="0" timestamp="2020-01-07T17:12:55" hostname="Axman000.local" time="0.037">
+  <properties/>
+  <testcase name="testInvalidResponse" classname="org.jasig.cas.client.validation.Cas30ServiceTicketValidatorTests" time="0.005"/>
+  <testcase name="testGetInlinedAttributes" classname="org.jasig.cas.client.validation.Cas30ServiceTicketValidatorTests" time="0.013"/>
+  <testcase name="testYesResponseWithPgt" classname="org.jasig.cas.client.validation.Cas30ServiceTicketValidatorTests" time="0.005"/>
+  <testcase name="testNoResponse" classname="org.jasig.cas.client.validation.Cas30ServiceTicketValidatorTests" time="0.002"/>
+  <testcase name="testYesResponseButNoPgt" classname="org.jasig.cas.client.validation.Cas30ServiceTicketValidatorTests" time="0.004"/>
+  <testcase name="testGetAttributes" classname="org.jasig.cas.client.validation.Cas30ServiceTicketValidatorTests" time="0.007"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

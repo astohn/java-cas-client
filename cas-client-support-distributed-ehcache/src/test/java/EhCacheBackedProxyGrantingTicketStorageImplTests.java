@@ -40,6 +40,6 @@ public class EhCacheBackedProxyGrantingTicketStorageImplTests extends TestCase {
 
         cache.save("proxyGrantingTicketIou", "proxyGrantingTicket");
         assertEquals("proxyGrantingTicket", cache.retrieve("proxyGrantingTicketIou"));
-        assertTrue("proxyGrantingTicket".equals(ehcache.get("proxyGrantingTicketIou").getValue()));
+        assertTrue("proxyGrantingTicket".equals(ehcache.get("proxyGrantingTicketIou").getObjectValue()));
     }
 }

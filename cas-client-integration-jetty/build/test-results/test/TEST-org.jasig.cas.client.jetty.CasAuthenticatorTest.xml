@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.jasig.cas.client.jetty.CasAuthenticatorTest" tests="4" skipped="0" failures="1" errors="0" timestamp="2020-01-07T17:12:58" hostname="Axman000.local" time="0.8">
+  <properties/>
+  <testcase name="testValidateRequestPublicPageWithTicket" classname="org.jasig.cas.client.jetty.CasAuthenticatorTest" time="0.725"/>
+  <testcase name="testValidateRequestSecurePageWithTicket" classname="org.jasig.cas.client.jetty.CasAuthenticatorTest" time="0.069"/>
+  <testcase name="testValidateRequestPublicPageNoTicket" classname="org.jasig.cas.client.jetty.CasAuthenticatorTest" time="0.003"/>
+  <testcase name="testValidateRequestSecurePageNoTicket" classname="org.jasig.cas.client.jetty.CasAuthenticatorTest" time="0.003">
+    <failure message="org.junit.ComparisonFailure: expected:&lt;.../localhost:8081/cas/[]login?service=http%3...&gt; but was:&lt;.../localhost:8081/cas/[/]login?service=http%3...&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;.../localhost:8081/cas/[]login?service=http%3...&gt; but was:&lt;.../localhost:8081/cas/[/]login?service=http%3...&gt;
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at org.jasig.cas.client.jetty.CasAuthenticatorTest.testValidateRequestSecurePageNoTicket(CasAuthenticatorTest.java:134)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:175)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:157)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.lang.Thread.run(Thread.java:748)
+</failure>
+  </testcase>
+  <system-out><![CDATA[Accepting connections on port 8081
+]]></system-out>
+  <system-err><![CDATA[[Test worker] INFO org.eclipse.jetty.util.log - Logging initialized @524ms to org.eclipse.jetty.util.log.Slf4jLog
+[Test worker] INFO org.eclipse.jetty.server.Server - jetty-9.4.24.v20191120; built: 2019-11-20T21:37:49.771Z; git: 363d5f2df3a8a28de40604320230664b9c793c16; jvm 1.8.0_172-b11
+[Test worker] INFO org.eclipse.jetty.util.TypeUtil - JVM Runtime does not support Modules
+[Test worker] WARN org.eclipse.jetty.webapp.StandardDescriptorProcessor - Duplicate mapping from *.jsp to jsp
+[Test worker] INFO org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+[Test worker] INFO org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+[Test worker] INFO org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+[Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Started o.e.j.w.WebAppContext@680c8bae{/webapp,file:///Users/axman/MyDev/IAM/CAS_Client/java-cas-client/cas-client-integration-jetty/src/test/webapp/,AVAILABLE}{/Users/axman/MyDev/IAM/CAS_Client/java-cas-client/cas-client-integration-jetty/src/test/webapp}
+[Test worker] INFO org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@61fb319b{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+[Test worker] INFO org.eclipse.jetty.server.Server - Started @942ms
+[qtp884144000-15] INFO org.jasig.cas.client.jetty.CasAuthenticator - Successfully authenticated bob
+[Test worker] INFO org.eclipse.jetty.server.AbstractConnector - Stopped ServerConnector@61fb319b{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+[Test worker] INFO org.eclipse.jetty.server.session - node0 Stopped scavenging
+[Test worker] INFO org.eclipse.jetty.server.handler.ContextHandler - Stopped o.e.j.w.WebAppContext@680c8bae{/webapp,null,UNAVAILABLE}{/Users/axman/MyDev/IAM/CAS_Client/java-cas-client/cas-client-integration-jetty/src/test/webapp}
+]]></system-err>
+</testsuite>

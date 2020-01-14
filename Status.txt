@@ -1,0 +1,8 @@
+I have gradle working for builds but have to turn off tests since so many issues with it.
+
+Command to run is:
+./gradlew clean build -x test
+
+Also cannot get jboss module to compile, had to turn off for it to work.
+
+Tests really need to be redone, in fact all code needs to be updated.

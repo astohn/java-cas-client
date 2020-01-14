@@ -18,12 +18,6 @@
  */
 package org.jasig.cas.client.validation;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.fail;
-import java.io.UnsupportedEncodingException;
-import java.util.Collection;
-import java.util.Date;
-import org.jasig.cas.client.PublicTestHttpServer;
 import org.jasig.cas.client.util.SamlUtils;
 import org.joda.time.DateTime;
 import org.joda.time.DateTimeZone;
@@ -31,6 +25,13 @@ import org.joda.time.Interval;
 import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
+
+import java.io.UnsupportedEncodingException;
+import java.util.Collection;
+import java.util.Date;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.fail;
 
 /**
  * @author Scott Battaglia

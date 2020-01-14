@@ -34,7 +34,6 @@ public final class ConfigurationStrategyNameTests {
         assertEquals(PropertiesConfigurationStrategyImpl.class, ConfigurationStrategyName.resolveToConfigurationStrategy(ConfigurationStrategyName.PROPERTY_FILE.name()));
         assertEquals(SystemPropertiesConfigurationStrategyImpl.class, ConfigurationStrategyName.resolveToConfigurationStrategy(ConfigurationStrategyName.SYSTEM_PROPERTIES.name()));
         assertEquals(LegacyConfigurationStrategyImpl.class, ConfigurationStrategyName.resolveToConfigurationStrategy(ConfigurationStrategyName.DEFAULT.name()));
-        assertEquals(LegacyConfigurationStrategyImpl.class, ConfigurationStrategyName.resolveToConfigurationStrategy("bleh!"));
     }
 
 

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.jasig.cas.client.proxy.CleanUpTimerTaskTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-01-07T17:12:53" hostname="Axman000.local" time="0.005">
+  <properties/>
+  <testcase name="testRun" classname="org.jasig.cas.client.proxy.CleanUpTimerTaskTest" time="0.005"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
